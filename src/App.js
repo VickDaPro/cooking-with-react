@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import RecipeList from "./components/RecipeList";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RecipeList recipes={sampleRecipes} />
     </div>
   );
 }
+
+const sampleRecipes = [
+  {
+    id: 1,
+    title: "Plain Dosa",
+    servings: 3,
+    cookTime: 15,
+    instructions:
+      "1. Make the dosa batter.\n2. Cook the dosa.\n3. Eat the dosa.",
+  },
+  {
+    id: 2,
+    title: "Masala Dosa",
+    servings: 5,
+    cookTime: 25,
+    instructions:
+      "1. Make the dosa batter and aloo masala.\n2. Cook the dosa and aloo masala.\n3. Eat the dosa.",
+  },
+];
 
 export default App;
