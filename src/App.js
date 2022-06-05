@@ -16,6 +16,18 @@ const sampleRecipes = [
     cookTime: 15,
     instructions:
       "1. Make the dosa batter.\n2. Cook the dosa.\n3. Eat the dosa.",
+    ingredients: [
+      {
+        id: 1,
+        name: "Rice flour",
+        amount: "1 pound",
+      },
+      {
+        id: 1,
+        name: "Salt",
+        amount: "1 Tbs",
+      },
+    ],
   },
   {
     id: 2,
@@ -24,6 +36,18 @@ const sampleRecipes = [
     cookTime: 25,
     instructions:
       "1. Make the dosa batter and aloo masala.\n2. Cook the dosa and aloo masala.\n3. Eat the dosa.",
+    ingredients: [
+      {
+        id: 1,
+        name: "Aloo masala",
+        amount: "1 pound",
+      },
+      {
+        id: 1,
+        name: "Chilli powder",
+        amount: "2 Tbs",
+      },
+    ],
   },
 ];
 
