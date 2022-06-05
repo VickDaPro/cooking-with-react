@@ -11,7 +11,7 @@ function App() {
 const sampleRecipes = [
   {
     id: 1,
-    title: "Plain Dosa",
+    name: "Plain Dosa",
     servings: 3,
     cookTime: 15,
     instructions:
@@ -19,7 +19,7 @@ const sampleRecipes = [
   },
   {
     id: 2,
-    title: "Masala Dosa",
+    name: "Masala Dosa",
     servings: 5,
     cookTime: 25,
     instructions:

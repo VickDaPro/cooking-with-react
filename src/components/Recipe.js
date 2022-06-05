@@ -1,25 +1,27 @@
 import React from "react";
 
-export default function Recipe() {
+export default function Recipe(props) {
+  const { name, cookTime, servings, instructions } = props;
+
   return (
     <div>
       <div>
-        <h3>Plain Dosa</h3>
+        <h3>{name}</h3>
         <div>
           <button>Edit</button>
           <button>Delete</button>
         </div>
         <div>
-          <span>Cook time</span>
-          <span>15</span>
+          <span>Cook time:</span>
+          <span>{cookTime}</span>
         </div>
         <div>
           <span>Servings</span>
-          <span>3</span>
+          <span>{servings}</span>
         </div>
         <div>
-          <span>Ingredients</span>
-          <div>1. Make the dosa batter. 2. Cook the dosa. 3. Eat the dosa.</div>
+          <span>Instructions</span>
+          <div>{instructions}</div>
         </div>
       </div>
     </div>
